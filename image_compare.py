@@ -7,8 +7,8 @@ import imagehash
 
 app = Flask(__name__)
 
-app.config['MONGO_DBNAME'] = 'image_db'
-app.config['MONGO_URI'] = 'mongodb://192.168.20.189:27017/image_db'
+app.config['MONGO_DBNAME'] = 'database'
+app.config['MONGO_URI'] = 'mongodb://127.0.0.1:27017/database' #Url MongoDB
 
 mongo = PyMongo(app)
 
